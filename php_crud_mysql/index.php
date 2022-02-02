@@ -3,7 +3,6 @@
 <main class="container p-4">
   <div class="row">
     <div class="col-md-4">
-      <!-- MESSAGES -->
 
       <?php if (isset($_SESSION['message'])) { ?>
       <div class="alert alert-<?= $_SESSION['message_type']?> alert-dismissible fade show" role="alert">
@@ -14,7 +13,7 @@
       </div>
       <?php session_unset(); } ?>
 
-      <!-- ADD TASK FORM -->
+      <!-- añadir nombre -->
       <div class="card card-body">
         <form action="save_task.php" method="POST">
           <div class="form-group">
